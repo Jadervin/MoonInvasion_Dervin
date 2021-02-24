@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0f7e166c3bbf6945a8da5fe54433457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: Tower Defense
+  startSceneName: Instructions
   Menu: Main Menu
   Credits: Credits
 --- !u!4 &1463299269
