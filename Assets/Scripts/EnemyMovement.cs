@@ -37,11 +37,11 @@ public class EnemyMovement : MonoBehaviour
         float gravity = Physics.gravity.y * Time.deltaTime;
         
 
-        Vector3 movementVector = new Vector3(0, gravity, movZ);
+        //Vector3 movementVector = new Vector3(0, gravity, movZ);
         
 
 
-        controller.Move(movementVector);
+        controller.Move(direction);
         //Enemy.transform.forward(axis * Speed * Time.deltaTime, 0, 0));
 
         

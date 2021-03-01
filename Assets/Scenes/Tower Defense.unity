@@ -511,7 +511,7 @@ MonoBehaviour:
   spawnPosition: {fileID: 289179854}
   enemyPrefab: {fileID: 3654930156376213673, guid: 222e89b8550a2f94cab105bf01f87f85, type: 3}
   player: {fileID: 0}
-  spawnEverySeconds: 2
+  spawnEverySeconds: 1
 --- !u!4 &289179854
 Transform:
   m_ObjectHideFlags: 0
