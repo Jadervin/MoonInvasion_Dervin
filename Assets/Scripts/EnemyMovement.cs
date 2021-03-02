@@ -6,7 +6,7 @@ public class EnemyMovement : MonoBehaviour
 {
     [Range(0, 100)]
     public float Speed;
-    private Vector2 movement = new Vector2(1, 1);
+    private Vector3 movement = new Vector3(0, 0, 1);
     [SerializeField]
     public GameObject Enemy;
     public Rigidbody rb;
@@ -31,17 +31,21 @@ public class EnemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+        transform.position += transform.forward * Speed * Time.deltaTime;
+
+
+        /*
         float movZ = direction.z * Speed * Time.deltaTime;
-        //float movZ = Input.GetAxis("Vertical") * Speed * Time.deltaTime;
+        
         float gravity = Physics.gravity.y * Time.deltaTime;
         
 
-        //Vector3 movementVector = new Vector3(0, gravity, movZ);
+       Vector3 movementVector = new Vector3(0, gravity, movZ);
         
 
 
-        controller.Move(direction);
+        controller.Move(movementVector);
         //Enemy.transform.forward(axis * Speed * Time.deltaTime, 0, 0));
 
         
@@ -52,7 +56,7 @@ public class EnemyMovement : MonoBehaviour
         //float axis2 = Input.GetAxis(movementAxis2);
 
         //Player.transform.Translate(new Vector3(0,0, axis2 * Speed * Time.deltaTime));
-        
+        */
     }
     private void OnCollisionEnter(Collision collision)
     {
