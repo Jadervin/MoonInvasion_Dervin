@@ -18,12 +18,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float movX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
-        float movZ = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-        float gravity = Physics.gravity.y * Time.deltaTime;
+        //float movX = transform.forward * speed * Time.deltaTime;
+       // float movZ = Input.GetAxis("Vertical") * speed * Time.deltaTime;
+        //float gravity = Physics.gravity.y * Time.deltaTime;
 
 
-        Vector3 movementVector = new Vector3(movX, gravity, movZ);
+        Vector3 movementVector = transform.forward * speed * Time.deltaTime;
 
 
 
