@@ -10,6 +10,9 @@ public class MainMenuScript : MonoBehaviour
     public string Menu;
     public string Credits;
 
+    public AudioSource soundSource;
+    public AudioClip menu;
+
     public void StartPressed()
     {
         SceneManager.LoadScene(startSceneName);
@@ -19,6 +22,7 @@ public class MainMenuScript : MonoBehaviour
     }
     public void MenuPressed()
     {
+        soundSource.PlayOneShot(menu);
         SceneManager.LoadScene(Menu);
 
 

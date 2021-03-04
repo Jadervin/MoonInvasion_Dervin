@@ -1,60 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class BulletScript : MonoBehaviour
 {
-    public GameObject Player;
-    //public Health healthstat;
-    public float expiryTime = 0f;
-    public string YouWin;
-    public Transform explosionEffect;
+
+    public float speed;
+    public float despawnTime;
+    public int damage;
+    float timeAlive = 0;
+    public GameObject gitsEffect;
 
 
 
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        Destroy(gameObject, expiryTime);
-    }
+        transform.position += transform.forward * speed * Time.deltaTime;
+       
+        //(x,y,z )* speed = (speed*x,speed*y,speed*z)
+        //(1,0,0)* speed = (speed,0,0)
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-            if (collision.gameObject.tag == "Enemy")
-            {
+        timeAlive += Time.deltaTime;
 
-                Destroy(collision.gameObject);
-                Destroy(this.gameObject);
-                Debug.Log("DESTROYED");
-            }
-
-
-        if (collision.gameObject.tag == "Boss")
+        if(timeAlive>despawnTime)
         {
+            Destroy(gameObject);
 
-            Destroy(collision.gameObject);
-            Destroy(this.gameObject);
-            Debug.Log("DESTROYED");
-            SceneManager.LoadScene(YouWin);
+        }
+
+
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+            Instantiate(gitsEffect, transform.position, Quaternion.identity);
+
+            Destroy(gameObject);
         }
     }
-    
-    
-
-   
-
-
-
-
-
-
-
-
 }
