@@ -91,7 +91,7 @@ MeshCollider:
   m_GameObject: {fileID: 826140031856744938}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -221,7 +221,7 @@ MeshCollider:
   m_GameObject: {fileID: 1434570869144208883}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -351,7 +351,7 @@ MeshCollider:
   m_GameObject: {fileID: 2245483703635246217}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -486,7 +486,7 @@ MeshCollider:
   m_GameObject: {fileID: 2719558959522237266}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -582,7 +582,7 @@ MeshCollider:
   m_GameObject: {fileID: 2729874234197634761}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -678,7 +678,7 @@ MeshCollider:
   m_GameObject: {fileID: 2860480738301035224}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -774,7 +774,7 @@ MeshCollider:
   m_GameObject: {fileID: 2975457918071604051}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -826,13 +826,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2.07
-  m_Radius: 1.36
+  m_Height: 0.62
+  m_Radius: 0.31
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
-  m_MinMoveDistance: 8.11
-  m_Center: {x: 0, y: 0, z: 0}
+  m_MinMoveDistance: 0
+  m_Center: {x: 0, y: 0.21, z: 0}
 --- !u!114 &-24360151894042586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,7 +845,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcfd446be2fa57b4b8fcf583e99ae0e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 31.5
+  Speed: 30.8
   controller: {fileID: 2383235879525969257}
   health: {fileID: 0}
 --- !u!1 &4081209410666983724
@@ -939,7 +939,7 @@ MeshCollider:
   m_GameObject: {fileID: 4081209410666983724}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1035,7 +1035,7 @@ MeshCollider:
   m_GameObject: {fileID: 4261385031153863875}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1131,7 +1131,7 @@ MeshCollider:
   m_GameObject: {fileID: 5487943875654542924}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1227,7 +1227,7 @@ MeshCollider:
   m_GameObject: {fileID: 5999825020578538228}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1355,7 +1355,7 @@ MeshCollider:
   m_GameObject: {fileID: 6456330122126814780}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1451,7 +1451,7 @@ MeshCollider:
   m_GameObject: {fileID: 6905020042050747645}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1547,7 +1547,7 @@ MeshCollider:
   m_GameObject: {fileID: 7531932828771256343}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1643,7 +1643,7 @@ MeshCollider:
   m_GameObject: {fileID: 7709875722820215969}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1739,7 +1739,7 @@ MeshCollider:
   m_GameObject: {fileID: 8767526150938325965}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1835,7 +1835,7 @@ MeshCollider:
   m_GameObject: {fileID: 8775931979120326863}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -1931,7 +1931,7 @@ MeshCollider:
   m_GameObject: {fileID: 9196421273728353371}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -2027,7 +2027,7 @@ MeshCollider:
   m_GameObject: {fileID: 9214909148459569149}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
