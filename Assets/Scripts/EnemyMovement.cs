@@ -35,7 +35,7 @@ public class EnemyMovement : MonoBehaviour
     {
         
         Vector3 movementVector = transform.forward * Speed * Time.deltaTime;
-        print(movementVector.ToString());
+        //print(movementVector.ToString());
 
         controller.Move(movementVector);
         
@@ -46,9 +46,32 @@ public class EnemyMovement : MonoBehaviour
 
         
     }
+    /*
     private void OnCollisionEnter(Collision collision)
     {
+        if (this.gameObject.tag == "Tank")
+        {
+            if (collision.gameObject.tag == "Turret")
+            {
+
+                Destroy(collision.gameObject);
+
+            }
+        }
+    }
+    */
+    private void OnTriggerEnter(Collider other)
+    {
+        if (this.gameObject.tag == "Tank")
+        {
+            if (other.gameObject.tag == "Turret")
+            {
+
+                Destroy(other.gameObject);
+
+            }
+        }
 
     }
-
+    
 }

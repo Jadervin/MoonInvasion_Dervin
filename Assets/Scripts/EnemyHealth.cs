@@ -17,11 +17,11 @@ public class EnemyHealth : MonoBehaviour
     {
 
 
-        if (other.gameObject.tag == "Bullet")
+        if (other.gameObject.tag == "Alien")
         {
 
             currentHP = currentHP - 1;
-            Destroy(other.gameObject);
+            
 
             if (currentHP == NoHP)
             {
