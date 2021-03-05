@@ -790,6 +790,7 @@ GameObject:
   - component: {fileID: 4175746358107083283}
   - component: {fileID: 2383235879525969257}
   - component: {fileID: -24360151894042586}
+  - component: {fileID: 7656828846181232315}
   m_Layer: 0
   m_Name: maya2sketchfab
   m_TagString: Alien
@@ -848,6 +849,19 @@ MonoBehaviour:
   Speed: 30.8
   controller: {fileID: 2383235879525969257}
   health: {fileID: 0}
+--- !u!65 &7656828846181232315
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3654930156376213673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.37065968, y: 0.342699, z: 0.24162655}
+  m_Center: {x: -0.0058129244, y: -0.009550721, z: -0.018913833}
 --- !u!1 &4081209410666983724
 GameObject:
   m_ObjectHideFlags: 0
