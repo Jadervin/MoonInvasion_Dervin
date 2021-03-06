@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class HealthUI : MonoBehaviour
 {
 
-    public Health healthToDisplay;
+    public MothershipHealth healthToDisplay;
     //public Text healthDisplay;
     public Slider healthbar;
 

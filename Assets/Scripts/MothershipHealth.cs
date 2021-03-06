@@ -13,11 +13,6 @@ public class MothershipHealth : MonoBehaviour
 
     //public PlayerMovement playerMove;
 
-
-
-
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -32,23 +27,27 @@ public class MothershipHealth : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-
-
-        if (other.gameObject.tag == "Enemy Bullet")
+        if (other.gameObject.tag == "Alien")
         {
 
-            currentHP = currentHP - 1;
+            currentHP -= 1;
+            //Destroy(other.gameObject);
 
             if (currentHP == NoHP)
             {
-                SceneManager.LoadScene(gameover);
-
+                Destroy(this.gameObject);
+                Debug.Log("DESTROYED");
             }
         }
 
+        if (other.gameObject.tag == "Tank")
+        {
+
+            //currentHP = currentHP - 1;
+            Destroy(this.gameObject);
 
 
+        }
     }
-
 
 }
