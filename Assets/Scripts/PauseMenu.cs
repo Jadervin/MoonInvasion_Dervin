@@ -13,13 +13,13 @@ public class PauseMenu : MonoBehaviour
 
     //keeps track of whether game is paused
     bool isPaused = false;
-    //[Header("Music")]
-
-    //public MusicManager musicManager;
+    [Header("Music")]
+    public MusicManager musicManager;
 
     [Header("SFX")]
     //audio source to play UI sound
     public AudioSource soundSource;
+
     //sounds that will play when 
     public AudioClip pauseSound;
     public AudioClip unpauseSound;
@@ -52,7 +52,7 @@ public class PauseMenu : MonoBehaviour
         soundSource.PlayOneShot(unpauseSound);
 
         //pointScript.enabled = true;
-        //musicManager.UnPause();
+        musicManager.UnPause();
     }
 
     public void Pause()
@@ -63,6 +63,6 @@ public class PauseMenu : MonoBehaviour
         soundSource.PlayOneShot(pauseSound);
 
         //pointScript.enabled = false;
-        //musicManager.Pause();
+        musicManager.Pause();
     }
 }

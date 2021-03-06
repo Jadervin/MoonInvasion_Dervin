@@ -7,7 +7,7 @@ public class EnemySpawn : MonoBehaviour
 {
     public Transform spawnPosition;
     //float minSpawnSec = 2, maxSpawnSec = 10;
-   
+    //public int MaxEnemies = 10;
     public GameObject enemyPrefab;
 
     public Transform player;
