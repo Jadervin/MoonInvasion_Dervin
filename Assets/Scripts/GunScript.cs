@@ -8,10 +8,7 @@ public class GunScript : MonoBehaviour
     //public ParticleSystem MuzzleFlash;
     public int projectileSelected = 0;
     public GameObject muzzle;
-
-
     public float cooldownTime;
-   
     float coolTimer = 0;
 
     private void Update()

@@ -9,6 +9,9 @@ public class TurretHealth : MonoBehaviour
     [HideInInspector]
     public int currentHP;
     public int NoHP;
+    public float cooldownTime;
+    float coolTimer = 0;
+
 
     /*
     
@@ -36,33 +39,69 @@ public class TurretHealth : MonoBehaviour
 
         }
     }
-    
-   
-    private void OnCollisionEnter(Collision collision)
+    */
+
+
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.tag == "Alien")
         {
-
             currentHP = currentHP - 1;
-            //Destroy(other.gameObject);
 
             if (currentHP == NoHP)
             {
                 Destroy(this.gameObject);
                 Debug.Log("DESTROYED");
             }
+
+
+            /*
+            if (coolTimer > 0)
+            {
+                coolTimer -= Time.deltaTime;
+            }
+
+
+            else if (coolTimer <= 0)
+            {
+                currentHP = currentHP - 1;
+
+                if (currentHP == NoHP)
+                {
+                    Destroy(this.gameObject);
+                    Debug.Log("DESTROYED");
+                }
+
+                coolTimer = cooldownTime;
+
+
+            }
+            
+            
+            */
+            //Destroy(other.gameObject);
         }
 
         if (collision.gameObject.tag == "Tank")
         {
+            if (coolTimer > 0)
+            {
+                coolTimer -= Time.deltaTime;
+            }
 
+
+            else if (coolTimer <= 0)
+            {
+                Destroy(this.gameObject);
+                coolTimer = cooldownTime;
+            }
             //currentHP = currentHP - 1;
-            Destroy(this.gameObject);
+            
 
             
         }
     }
-    */
+    
     // Start is called before the first frame update
     void Start()
     {
