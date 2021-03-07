@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Alien
   - Tank
+  - Laser
   layers:
   - Default
   - TransparentFX
