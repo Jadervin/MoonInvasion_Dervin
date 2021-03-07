@@ -17,7 +17,7 @@ public class EnemySpawn : MonoBehaviour
     public Transform player;
     public float spawnEverySeconds;
     float secPassed = 0;
-    int lastEnemySpawn = -1;
+    //int lastEnemySpawn = -1;
 
 
     // Start is called before the first frame update
