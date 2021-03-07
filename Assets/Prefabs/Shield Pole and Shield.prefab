@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5746282244878988080}
   - component: {fileID: 5746282244878988083}
   - component: {fileID: 5746282244878988082}
-  - component: {fileID: 5746282244878988081}
   - component: {fileID: 5746282244878988084}
+  - component: {fileID: 2095068088}
   m_Layer: 0
   m_Name: Shield (1)
   m_TagString: Untagged
@@ -83,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5746282244878988081
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5746282244878988047}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &5746282244878988084
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -113,6 +99,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &2095068088
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746282244878988047}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000004, y: 0.0000007450584, z: 10.000002}
+  m_Center: {x: -0.0000038146973, y: 0, z: -0.00000047683716}
 --- !u!1 &5746282245416738579
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,6 +146,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &391283159
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746282245438674507}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.999999, y: 2.2204468e-16, z: 10.000004}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5746282245922179108
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,8 +170,8 @@ GameObject:
   - component: {fileID: 5746282245922179109}
   - component: {fileID: 5746282245922179112}
   - component: {fileID: 5746282245922179111}
-  - component: {fileID: 5746282245922179110}
   - component: {fileID: 5746282245922179113}
+  - component: {fileID: 1662812876}
   m_Layer: 0
   m_Name: Shield (2)
   m_TagString: Untagged
@@ -230,20 +242,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5746282245922179110
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5746282245922179108}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!54 &5746282245922179113
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -260,6 +258,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &1662812876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746282245922179108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.000005, y: 0.0000007450583, z: 10.000004}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1296537747081376022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -315,8 +326,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shield
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6791673944532985691, guid: aa79d72909b091c47a85a30dcab7f002, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: aa79d72909b091c47a85a30dcab7f002, type: 3}
+--- !u!1 &5746282245438674507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6791673944532985693, guid: aa79d72909b091c47a85a30dcab7f002, type: 3}
+  m_PrefabInstance: {fileID: 1296537747081376022}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5746282245438674508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6791673944532985690, guid: aa79d72909b091c47a85a30dcab7f002, type: 3}

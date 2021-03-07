@@ -49,6 +49,8 @@ MonoBehaviour:
   projectileSelected: 0
   muzzle: {fileID: 759396965}
   cooldownTime: 2
+  soundSource: {fileID: 0}
+  shot: {fileID: 8300000, guid: 98f2ec9198ad38e4b923a3c1671d9e67, type: 3}
 --- !u!1 &759396965
 GameObject:
   m_ObjectHideFlags: 0
@@ -253,8 +255,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 458.24646, y: 358.07727, z: 308.69128}
-  m_Center: {x: -0, y: 169.56306, z: 0}
+  m_Size: {x: 458.24646, y: 358.07727, z: 257.3511}
+  m_Center: {x: 0, y: 169.56306, z: 25.670063}
 --- !u!114 &1138430414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,3 +272,4 @@ MonoBehaviour:
   MaxHP: 3
   currentHP: 0
   NoHP: 0
+  cooldownTime: 2

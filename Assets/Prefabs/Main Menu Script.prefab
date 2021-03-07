@@ -46,3 +46,5 @@ MonoBehaviour:
   startSceneName: Tower Defense
   Menu: Main Menu
   Credits: Credits
+  soundSource: {fileID: 0}
+  menu: {fileID: 8300000, guid: 223596bd9f9d9ca46a4130838728ded7, type: 3}
