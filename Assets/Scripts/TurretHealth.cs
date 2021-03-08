@@ -13,6 +13,14 @@ public class TurretHealth : MonoBehaviour
     float coolTimer = 0;
 
 
+
+    void Start()
+    {
+
+        currentHP = MaxHP;
+
+    }
+
     /*
     
     private void OnTriggerEnter(Collider other)
@@ -40,7 +48,10 @@ public class TurretHealth : MonoBehaviour
         }
     }
     */
-
+    void Update()
+    {
+        
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -51,6 +62,7 @@ public class TurretHealth : MonoBehaviour
             if (currentHP == NoHP)
             {
                 Destroy(this.gameObject);
+                Destroy(collision.gameObject);
                 Debug.Log("DESTROYED");
             }
 
@@ -103,14 +115,8 @@ public class TurretHealth : MonoBehaviour
     }
     
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
