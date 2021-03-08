@@ -51,10 +51,11 @@ public class BulletScript : MonoBehaviour
     }
     */
     private void OnCollisionEnter(Collision collision)
-    {
+    {print("Hit");
         if (collision.gameObject.tag == ("Alien"))
         {
             Destroy(collision.gameObject);
+            
             Instantiate(gitsEffect, transform.position, Quaternion.identity);
 
             Destroy(this.gameObject);
