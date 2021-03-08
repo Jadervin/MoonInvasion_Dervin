@@ -380,7 +380,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8479353246318133183}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 458.24646, y: 358.07727, z: 257.3511}
@@ -397,7 +397,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07531ef9b7db22442a70059a67e1bb33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHP: 3
+  MaxHP: 5
   currentHP: 0
   NoHP: 0
   cooldownTime: 2
+  turretExplode: {fileID: 7074951875977169484, guid: 25b5c02a66774504191b3d41317c85d1, type: 3}
+  enemyExplode: {fileID: 714942875768797795, guid: 1501a87668904f248994a43b6d22a99a, type: 3}

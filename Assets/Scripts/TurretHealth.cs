@@ -11,7 +11,12 @@ public class TurretHealth : MonoBehaviour
     public int NoHP;
     public float cooldownTime;
     float coolTimer = 0;
+    public ParticleSystem turretExplode;
+    public ParticleSystem enemyExplode;
 
+    public AudioSource soundSource;
+    public AudioClip destroyed;
+    public AudioClip enemyDestroyed;
 
 
     void Start()
@@ -62,36 +67,17 @@ public class TurretHealth : MonoBehaviour
             if (currentHP == NoHP)
             {
                 Destroy(this.gameObject);
+                Instantiate(turretExplode, transform.position, Quaternion.identity);
+                soundSource.PlayOneShot(destroyed);
+
+
                 Destroy(collision.gameObject);
+                Instantiate(enemyExplode, transform.position, Quaternion.identity);
+                soundSource.PlayOneShot(enemyDestroyed);
+
                 Debug.Log("DESTROYED");
             }
 
-
-            /*
-            if (coolTimer > 0)
-            {
-                coolTimer -= Time.deltaTime;
-            }
-
-
-            else if (coolTimer <= 0)
-            {
-                currentHP = currentHP - 1;
-
-                if (currentHP == NoHP)
-                {
-                    Destroy(this.gameObject);
-                    Debug.Log("DESTROYED");
-                }
-
-                coolTimer = cooldownTime;
-
-
-            }
-            
-            
-            */
-            //Destroy(other.gameObject);
         }
 
         if (collision.gameObject.tag == "Tank")

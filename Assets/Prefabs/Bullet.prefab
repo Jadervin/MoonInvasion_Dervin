@@ -129,9 +129,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  despawnTime: 5
+  despawnTime: 3
   damage: 1
-  gitsEffect: {fileID: 0}
+  explosionEffect: {fileID: 714942875768797795, guid: 1501a87668904f248994a43b6d22a99a, type: 3}
 --- !u!65 &2896874798014577323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 3
+  m_Time: 1
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -204,7 +204,7 @@ TrailRenderer:
         outWeight: 0.18615094
       - serializedVersion: 3
         time: 1
-        value: 0.37007415
+        value: 0.15747344
         inSlope: -0.7733222
         outSlope: -0.7733222
         tangentMode: 0
@@ -216,7 +216,7 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.20784314, g: 0.27125156, b: 0.44313726, a: 0.8980392}
+      key0: {r: 0.64779866, g: 0.74171895, b: 1, a: 0.8980392}
       key1: {r: 0.50400513, g: 0.1990625, b: 0.5188679, a: 0.75686276}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
@@ -224,7 +224,7 @@ TrailRenderer:
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 13107
+      ctime0: 11372
       ctime1: 48380
       ctime2: 65535
       ctime3: 0

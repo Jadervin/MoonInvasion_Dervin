@@ -9,7 +9,10 @@ public class BulletScript : MonoBehaviour
     public float despawnTime;
     public int damage;
     float timeAlive = 0;
-    public GameObject gitsEffect;
+    public ParticleSystem explosionEffect;
+
+    public AudioSource soundSource;
+    public AudioClip kill;
 
 
 
@@ -30,26 +33,28 @@ public class BulletScript : MonoBehaviour
 
 
     }
-    /*
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == ("Alien"))
         {
             Destroy(other.gameObject);
-            Instantiate(gitsEffect, transform.position, Quaternion.identity);
-
-            Destroy(gameObject);
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            soundSource.PlayOneShot(kill);
+            Destroy(this.gameObject);
         }
 
         if (other.gameObject.tag == ("Tank"))
         {
             Destroy(other.gameObject);
-            Instantiate(gitsEffect, transform.position, Quaternion.identity);
-
-            Destroy(gameObject);
+            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            soundSource.PlayOneShot(kill);
+            Destroy(this.gameObject);
         }
     }
-    */
+
+
+    /*
     private void OnCollisionEnter(Collision collision)
     {print("Hit");
         if (collision.gameObject.tag == ("Alien"))
@@ -70,5 +75,5 @@ public class BulletScript : MonoBehaviour
         }
 
     }
-    
+    */
 }

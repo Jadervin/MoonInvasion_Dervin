@@ -10,6 +10,8 @@ public class MothershipHealth : MonoBehaviour
     public int currentHP;
     public string gameover;
     public int NoHP;
+    public ParticleSystem mothershipExplosion;
+    public float explosionTimer = 2;
 
     //public PlayerMovement playerMove;
 
@@ -34,8 +36,19 @@ public class MothershipHealth : MonoBehaviour
             //Destroy(other.gameObject);
 
             if (currentHP == NoHP)
-            {
+            {   
+                //explosionTimer -= Time.deltaTime;
                 Destroy(this.gameObject);
+                Instantiate(mothershipExplosion, transform.position, Quaternion.identity);
+
+                SceneManager.LoadScene(gameover);
+
+                /*
+                if (explosionTimer < 0)
+                {
+                    SceneManager.LoadScene(gameover);
+                }
+                */
                 Debug.Log("DESTROYED");
             }
         }
@@ -43,11 +56,21 @@ public class MothershipHealth : MonoBehaviour
         if (other.gameObject.tag == "Tank")
         {
 
-            //currentHP = currentHP - 1;
-            Destroy(this.gameObject);
+            currentHP -= 3;
 
 
+            if (currentHP == NoHP)
+            {
+                Destroy(this.gameObject);
+                mothershipExplosion.Play();
+                SceneManager.LoadScene(gameover);
+                Debug.Log("DESTROYED");
+            }
         }
     }
+
+
+
+
 
 }

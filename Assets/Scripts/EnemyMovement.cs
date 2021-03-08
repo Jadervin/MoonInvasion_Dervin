@@ -59,7 +59,7 @@ public class EnemyMovement : MonoBehaviour
             }
         }
     }
-    */
+    
     private void OnTriggerEnter(Collider other)
     {
         if (this.gameObject.tag == "Tank")
@@ -73,5 +73,5 @@ public class EnemyMovement : MonoBehaviour
         }
 
     }
-    
+    */
 }
