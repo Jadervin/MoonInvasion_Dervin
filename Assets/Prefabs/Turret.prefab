@@ -338,7 +338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9144390227562374405
 Transform:
   m_ObjectHideFlags: 0
@@ -403,3 +403,6 @@ MonoBehaviour:
   cooldownTime: 2
   turretExplode: {fileID: 7074951875977169484, guid: 25b5c02a66774504191b3d41317c85d1, type: 3}
   enemyExplode: {fileID: 714942875768797795, guid: 1501a87668904f248994a43b6d22a99a, type: 3}
+  soundSource: {fileID: 7794881134010054853}
+  destroyed: {fileID: 0}
+  enemyDestroyed: {fileID: 8300000, guid: f08be272c1bac56408a80ce457634fc7, type: 3}

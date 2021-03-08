@@ -74,4 +74,11 @@ public class EnemyMovement : MonoBehaviour
 
     }
     */
+
+
+    private void OnParticleCollision(GameObject other) 
+    {
+
+        Destroy(this.gameObject);
+    }
 }

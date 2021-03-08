@@ -2040,13 +2040,14 @@ GameObject:
   - component: {fileID: 8964836684071650347}
   - component: {fileID: 8927196633671508872}
   - component: {fileID: 2016696326}
+  - component: {fileID: 3382881}
   m_Layer: 0
   m_Name: Terrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8964836684071650347
 Transform:
   m_ObjectHideFlags: 0
@@ -2095,6 +2096,27 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 41.53549, y: 27.258394, z: 37.98999}
   m_Center: {x: 6.0927563, y: 13.775832, z: 1.7311985e-14}
+--- !u!114 &3382881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8584617199112232593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07531ef9b7db22442a70059a67e1bb33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHP: 3
+  currentHP: 0
+  NoHP: 0
+  cooldownTime: 4
+  turretExplode: {fileID: 0}
+  enemyExplode: {fileID: 0}
+  soundSource: {fileID: 0}
+  destroyed: {fileID: 0}
+  enemyDestroyed: {fileID: 0}
 --- !u!1 &8636268790763766166
 GameObject:
   m_ObjectHideFlags: 0
@@ -2331,6 +2353,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8964836684071650347}
     m_Modifications:
+    - target: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_Volume
+      value: 0.097
+      objectReference: {fileID: 0}
     - target: {fileID: 8707307012999445587, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
       propertyPath: m_Name
       value: Sound Manager

@@ -123,27 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 4a88c45cf6241164084b1e8f808d9457, type: 2}
---- !u!1 &3382877 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8584617199112232593, guid: b237e08b6765f5542a010ed68433ea9b, type: 3}
-  m_PrefabInstance: {fileID: 2016696324}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3382881
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3382877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07531ef9b7db22442a70059a67e1bb33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxHP: 3
-  currentHP: 0
-  NoHP: 0
-  cooldownTime: 4
 --- !u!1 &90677380
 GameObject:
   m_ObjectHideFlags: 0
@@ -3625,18 +3604,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 374441085, guid: e313ff62c911c9e468ce804e4808d8e6, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1138430414, guid: e313ff62c911c9e468ce804e4808d8e6, type: 3}
-      propertyPath: MaxHP
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1138430415, guid: e313ff62c911c9e468ce804e4808d8e6, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8479353246318133183, guid: e313ff62c911c9e468ce804e4808d8e6, type: 3}
       propertyPath: m_Name
       value: Turret
@@ -4421,6 +4388,8 @@ MonoBehaviour:
   currentHP: 0
   gameover: Game Over
   NoHP: 0
+  mothershipExplosion: {fileID: 6732219158220660957, guid: fa8e1a633fae79f4b9bc7c89e930af38, type: 3}
+  explosionTimer: 2
 --- !u!114 &1629963185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4443,7 +4412,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1629963183}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 439.23242, y: 1202.987, z: 5104.2617}
@@ -5580,10 +5549,6 @@ PrefabInstance:
     - target: {fileID: 8584617199112232593, guid: b237e08b6765f5542a010ed68433ea9b, type: 3}
       propertyPath: m_Name
       value: Terrel
-      objectReference: {fileID: 0}
-    - target: {fileID: 8584617199112232593, guid: b237e08b6765f5542a010ed68433ea9b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8964836684071650347, guid: b237e08b6765f5542a010ed68433ea9b, type: 3}
       propertyPath: m_RootOrder

@@ -19,12 +19,14 @@ public class MothershipHealth : MonoBehaviour
     void Start()
     {
         currentHP = MaxHP;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        MeshRenderer MeshComponent = gameObject.GetComponent<MeshRenderer>();
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -33,15 +35,18 @@ public class MothershipHealth : MonoBehaviour
         {
 
             currentHP -= 1;
-            //Destroy(other.gameObject);
+            Destroy(other.gameObject);
 
             if (currentHP == NoHP)
-            {   
-                //explosionTimer -= Time.deltaTime;
-                Destroy(this.gameObject);
+            {
+
+                gameObject.GetComponent <Renderer> ().enabled = false;
                 Instantiate(mothershipExplosion, transform.position, Quaternion.identity);
 
-                SceneManager.LoadScene(gameover);
+                StartCoroutine(Wait(explosionTimer));
+
+                //explosionTimer -= Time.deltaTime;
+                
 
                 /*
                 if (explosionTimer < 0)
@@ -61,16 +66,28 @@ public class MothershipHealth : MonoBehaviour
 
             if (currentHP == NoHP)
             {
-                Destroy(this.gameObject);
+                //Destroy(this.gameObject);
+                
+                gameObject.GetComponent<Renderer>().enabled = false;
+                Instantiate(mothershipExplosion, transform.position, Quaternion.identity);
                 mothershipExplosion.Play();
-                SceneManager.LoadScene(gameover);
-                Debug.Log("DESTROYED");
+                StartCoroutine(Wait(explosionTimer));
             }
         }
     }
 
 
-
+    IEnumerator Wait(float duration)
+    {
+        //This is a coroutine
+        //Debug.Log("Start Wait() function. The time is: " + Time.time);
+        Debug.Log("Float duration = " + duration);
+        yield return new WaitForSeconds(duration);   //Wait
+        Debug.Log("End Wait() function and the time is: " + Time.time);
+        SceneManager.LoadScene(gameover);
+        
+        
+    }
 
 
 }
