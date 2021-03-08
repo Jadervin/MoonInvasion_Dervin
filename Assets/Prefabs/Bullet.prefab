@@ -130,8 +130,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   despawnTime: 3
-  damage: 1
+  damage: 2
   explosionEffect: {fileID: 714942875768797795, guid: 1501a87668904f248994a43b6d22a99a, type: 3}
+  soundSource: {fileID: 0}
+  kill: {fileID: 0}
+  tankMaxHP: 4
+  tankcurrentHP: 0
+  tankNoHP: 0
 --- !u!65 &2896874798014577323
 BoxCollider:
   m_ObjectHideFlags: 0

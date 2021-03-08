@@ -10,7 +10,10 @@ public class MothershipHealth : MonoBehaviour
     public int currentHP;
     public string gameover;
     public int NoHP;
+
     public ParticleSystem mothershipExplosion;
+    public ParticleSystem enemyExplode;
+
     public float explosionTimer = 2;
 
     //public PlayerMovement playerMove;
@@ -36,6 +39,7 @@ public class MothershipHealth : MonoBehaviour
 
             currentHP -= 1;
             Destroy(other.gameObject);
+            Instantiate(enemyExplode, transform.position, Quaternion.identity);
 
             if (currentHP == NoHP)
             {
@@ -62,7 +66,8 @@ public class MothershipHealth : MonoBehaviour
         {
 
             currentHP -= 3;
-
+            Destroy(other.gameObject);
+            Instantiate(enemyExplode, transform.position, Quaternion.identity);
 
             if (currentHP == NoHP)
             {

@@ -15,6 +15,18 @@ public class BulletScript : MonoBehaviour
     public AudioClip kill;
 
 
+  
+    public int tankMaxHP;
+    [HideInInspector]
+    public int tankcurrentHP;
+
+    public int tankNoHP;
+   
+    private void Start()
+    {
+        tankcurrentHP = tankMaxHP;
+    }
+
 
     private void Update()
     {
@@ -46,10 +58,30 @@ public class BulletScript : MonoBehaviour
 
         if (other.gameObject.tag == ("Tank"))
         {
+
+            
+            tankcurrentHP -= 1;
+            Destroy(this.gameObject);
+
+
+            if (tankcurrentHP == tankNoHP)
+            {
+                Destroy(other.gameObject);
+                Instantiate(explosionEffect, transform.position, Quaternion.identity);
+                soundSource.PlayOneShot(kill);
+
+
+                Destroy(this.gameObject);
+           
+
+                Debug.Log("DESTROYED");
+            }
+            /*
             Destroy(other.gameObject);
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             soundSource.PlayOneShot(kill);
             Destroy(this.gameObject);
+            */
         }
     }
 
