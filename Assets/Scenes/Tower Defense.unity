@@ -1195,14 +1195,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6540857088678049653, guid: 7668d312a9413a24786bb05ece4f9208, type: 3}
-      propertyPath: tankcurrentHP
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6879241130010006841, guid: 7668d312a9413a24786bb05ece4f9208, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7668d312a9413a24786bb05ece4f9208, type: 3}
 --- !u!1 &374160577
@@ -4059,6 +4051,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 374441086, guid: e313ff62c911c9e468ce804e4808d8e6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -185
+      objectReference: {fileID: 0}
     - target: {fileID: 8479353246318133183, guid: e313ff62c911c9e468ce804e4808d8e6, type: 3}
       propertyPath: m_Name
       value: Turret
