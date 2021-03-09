@@ -92,7 +92,7 @@ public class BulletScript : MonoBehaviour
         if (other.gameObject.tag == ("Turret"))
         {
             Destroy(other.gameObject);
-        Instantiate(explosionEffect, transform.position, Quaternion.identity);
+        Instantiate(turretExplode, transform.position, Quaternion.identity);
         soundSource.PlayOneShot(kill);
             Destroy(this.gameObject);
         }
@@ -117,7 +117,7 @@ public class BulletScript : MonoBehaviour
             if (tankHP.tankcurrentHP == tankHP.tankNoHP)
             {
                 Destroy(collision.gameObject);
-                Instantiate(turretExplode, transform.position, Quaternion.identity);
+                Instantiate(explosionEffect, transform.position, Quaternion.identity);
                 soundSource.PlayOneShot(kill);
 
 

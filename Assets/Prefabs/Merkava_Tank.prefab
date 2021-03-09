@@ -175,7 +175,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3509788794268108607}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 776.5054, y: 368.45953, z: 1385.447}
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tankMaxHP: 4
-  tankcurrentHP: -5
+  tankcurrentHP: 0
   tankNoHP: 0
 --- !u!1 &4679867078814768391
 GameObject:
@@ -299,6 +299,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4323058703886392709}
     m_Modifications:
+    - target: {fileID: 3737817847433190945, guid: 1ee919b7e46c7da46ade5564d94cce7d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737817847433190945, guid: 1ee919b7e46c7da46ade5564d94cce7d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3737817847433190945, guid: 1ee919b7e46c7da46ade5564d94cce7d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3737817848321155128, guid: 1ee919b7e46c7da46ade5564d94cce7d, type: 3}
       propertyPath: soundSource
       value: 
