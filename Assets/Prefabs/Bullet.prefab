@@ -130,13 +130,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   despawnTime: 3
-  damage: 2
+  damage: 1
   explosionEffect: {fileID: 714942875768797795, guid: 1501a87668904f248994a43b6d22a99a, type: 3}
-  soundSource: {fileID: 0}
-  kill: {fileID: 0}
-  tankMaxHP: 4
-  tankcurrentHP: 0
-  tankNoHP: 0
+  turretExplode: {fileID: 7074951875977169484, guid: 25b5c02a66774504191b3d41317c85d1, type: 3}
+  soundSource: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+  kill: {fileID: 8300000, guid: f08be272c1bac56408a80ce457634fc7, type: 3}
+  tankHP: {fileID: 6540857088678049653, guid: 7668d312a9413a24786bb05ece4f9208, type: 3}
 --- !u!65 &2896874798014577323
 BoxCollider:
   m_ObjectHideFlags: 0

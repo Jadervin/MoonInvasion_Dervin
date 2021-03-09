@@ -14,17 +14,17 @@ public class BulletScript : MonoBehaviour
     public AudioSource soundSource;
     public AudioClip kill;
 
-
+    public TankHealth tankHP;
   
-    public int tankMaxHP;
-    [HideInInspector]
-    public int tankcurrentHP;
+    //public int tankMaxHP;
+    //[HideInInspector]
+    //public int tankcurrentHP;
 
-    public int tankNoHP;
+    //public int tankNoHP;
    
     private void Start()
     {
-        tankcurrentHP = tankMaxHP;
+        //tankcurrentHP = tankMaxHP;
     }
 
 
@@ -55,16 +55,21 @@ public class BulletScript : MonoBehaviour
             soundSource.PlayOneShot(kill);
             Destroy(this.gameObject);
         }
-
+        
+        
         if (other.gameObject.tag == ("Tank"))
         {
 
-            
-            tankcurrentHP -= 1;
+            Destroy(this.gameObject);
+
+        }
+
+        /*
+            tankHP.tankcurrentHP -= 1;
             Destroy(this.gameObject);
 
 
-            if (tankcurrentHP == tankNoHP)
+            if (tankHP.tankcurrentHP == tankHP.tankNoHP)
             {
                 Destroy(other.gameObject);
                 Instantiate(turretExplode, transform.position, Quaternion.identity);
@@ -76,13 +81,14 @@ public class BulletScript : MonoBehaviour
 
                 Debug.Log("DESTROYED");
             }
-            /*
+            
             Destroy(other.gameObject);
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             soundSource.PlayOneShot(kill);
             Destroy(this.gameObject);
-            */
+            
         }
+          */
         if (other.gameObject.tag == ("Turret"))
         {
             Destroy(other.gameObject);
@@ -93,27 +99,35 @@ public class BulletScript : MonoBehaviour
 
     }
     
-
-    /*
+   
+    
     private void OnCollisionEnter(Collision collision)
-    {print("Hit");
-        if (collision.gameObject.tag == ("Alien"))
-        {
-            Destroy(collision.gameObject);
-            
-            Instantiate(gitsEffect, transform.position, Quaternion.identity);
-
-            Destroy(this.gameObject);
-        }
+    {
+        
+        
 
         if (collision.gameObject.tag == ("Tank"))
         {
-            Destroy(collision.gameObject);
-            Instantiate(gitsEffect, transform.position, Quaternion.identity);
-
+            
+            print("Hit");
+            tankHP.tankcurrentHP -= 1;
             Destroy(this.gameObject);
+
+
+            if (tankHP.tankcurrentHP == tankHP.tankNoHP)
+            {
+                Destroy(collision.gameObject);
+                Instantiate(turretExplode, transform.position, Quaternion.identity);
+                soundSource.PlayOneShot(kill);
+
+
+                Destroy(this.gameObject);
+
+
+                Debug.Log("DESTROYED");
+            }
         }
 
     }
-    */
+    
 }
