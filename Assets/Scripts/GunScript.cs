@@ -70,6 +70,7 @@ public class GunScript : MonoBehaviour
         temp = Instantiate(projectiles[projectileSelected], muzzle.transform.position, 
            muzzle.transform.rotation);
         soundSource.PlayOneShot(shot);
+        print("shot");
 
     }
 }

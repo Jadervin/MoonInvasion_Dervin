@@ -10,7 +10,7 @@ public class BulletScript : MonoBehaviour
     public int damage;
     float timeAlive = 0;
     public ParticleSystem explosionEffect;
-
+    public ParticleSystem turretExplode;
     public AudioSource soundSource;
     public AudioClip kill;
 
@@ -67,7 +67,7 @@ public class BulletScript : MonoBehaviour
             if (tankcurrentHP == tankNoHP)
             {
                 Destroy(other.gameObject);
-                Instantiate(explosionEffect, transform.position, Quaternion.identity);
+                Instantiate(turretExplode, transform.position, Quaternion.identity);
                 soundSource.PlayOneShot(kill);
 
 
@@ -83,8 +83,16 @@ public class BulletScript : MonoBehaviour
             Destroy(this.gameObject);
             */
         }
-    }
+        if (other.gameObject.tag == ("Turret"))
+        {
+            Destroy(other.gameObject);
+        Instantiate(explosionEffect, transform.position, Quaternion.identity);
+        soundSource.PlayOneShot(kill);
+            Destroy(this.gameObject);
+        }
 
+    }
+    
 
     /*
     private void OnCollisionEnter(Collision collision)
