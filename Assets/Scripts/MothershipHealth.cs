@@ -8,8 +8,9 @@ public class MothershipHealth : MonoBehaviour
     public int MaxHP;
     [HideInInspector]
     public int currentHP;
-    public string gameover;
     public int NoHP;
+
+    public string gameover;
 
     public ParticleSystem mothershipExplosion;
     public ParticleSystem enemyExplode;
@@ -86,9 +87,11 @@ public class MothershipHealth : MonoBehaviour
     {
         //This is a coroutine
         //Debug.Log("Start Wait() function. The time is: " + Time.time);
-        Debug.Log("Float duration = " + duration);
+        //Debug.Log("Float duration = " + duration);
         yield return new WaitForSeconds(duration);   //Wait
-        Debug.Log("End Wait() function and the time is: " + Time.time);
+
+        //Debug.Log("End Wait() function and the time is: " + Time.time);
+
         SceneManager.LoadScene(gameover);
         
         
