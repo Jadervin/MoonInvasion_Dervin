@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemySpawn : MonoBehaviour
 {
     public Transform spawnPosition;
-    //float minSpawnSec = 2, maxSpawnSec = 10;
+    float minSpawnSec = 2, maxSpawnSec = 11;
     public GameObject enemyPrefab;
 
 
@@ -23,7 +23,7 @@ public class EnemySpawn : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        //spawnEverySeconds = Random.Range(minSpawnSec, maxSpawnSec);
+        spawnEverySeconds = Random.Range(minSpawnSec, maxSpawnSec);
     }
 
     // Update is called once per frame
