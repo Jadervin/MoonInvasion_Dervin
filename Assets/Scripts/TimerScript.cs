@@ -10,11 +10,15 @@ public class TimerScript : MonoBehaviour
     public bool timerIsRunning = false;
     public string win;
     public Text startText;
+
+    public EnemySpawn[] enemyspawn;
+    public int scriptSelected = 0;
+
     private void Start()
     {
         // Starts the timer automatically
         timerIsRunning = true;
-        startText.text = (timeRemaining).ToString("0");
+        
     }
 
     void Update()
@@ -24,6 +28,12 @@ public class TimerScript : MonoBehaviour
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
+                startText.text = (timeRemaining).ToString("0");
+            }
+            else if(timeRemaining < 60 && timeRemaining > 0)
+            {
+                enemyspawn[scriptSelected].minSpawnSec = enemyspawn[scriptSelected].minSpawnSec / 2;
+                enemyspawn[scriptSelected].maxSpawnSec = enemyspawn[scriptSelected].maxSpawnSec / 2;
             }
             else
             {
