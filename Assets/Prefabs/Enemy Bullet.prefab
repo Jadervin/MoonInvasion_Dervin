@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2e5d893e15d72b748b046114113d6613, type: 2}
+  - {fileID: 2100000, guid: 4f476dbf9d282a140bf265cc6e193de0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -135,7 +135,6 @@ MonoBehaviour:
   turretExplode: {fileID: 7074951875977169484, guid: 25b5c02a66774504191b3d41317c85d1, type: 3}
   soundSource: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
   kill: {fileID: 8300000, guid: 70c8c4fd8df6f1c48879c4e822dfd6fe, type: 3}
-  tankHP: {fileID: 0}
 --- !u!65 &3231406559539116575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -169,7 +168,7 @@ TrailRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2e5d893e15d72b748b046114113d6613, type: 2}
+  - {fileID: 2100000, guid: 4f476dbf9d282a140bf265cc6e193de0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -220,24 +219,24 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.64779866, g: 0.74171895, b: 1, a: 0.8980392}
-      key1: {r: 0.50400513, g: 0.1990625, b: 0.5188679, a: 0.75686276}
-      key2: {r: 1, g: 1, b: 1, a: 0}
-      key3: {r: 0, g: 0, b: 0, a: 0}
-      key4: {r: 0, g: 0, b: 0, a: 0}
+      key0: {r: 0.5754717, g: 0.14527865, b: 0.01447723, a: 0.8980392}
+      key1: {r: 0.5176471, g: 0.0627451, b: 0.19999997, a: 0.75686276}
+      key2: {r: 0.1981132, g: 0.04018944, b: 0.019935904, a: 0}
+      key3: {r: 0.22446328, g: 0.042049475, b: 0.034784734, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 11372
-      ctime1: 48380
-      ctime2: 65535
-      ctime3: 0
-      ctime4: 0
+      ctime1: 32768
+      ctime2: 51464
+      ctime3: 63222
+      ctime4: 65535
       ctime5: 0
       ctime6: 0
       ctime7: 0
-      atime0: 0
-      atime1: 58211
+      atime0: 15035
+      atime1: 38743
       atime2: 0
       atime3: 0
       atime4: 0
@@ -245,7 +244,7 @@ TrailRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_NumColorKeys: 3
+      m_NumColorKeys: 5
       m_NumAlphaKeys: 2
     numCornerVertices: 0
     numCapVertices: 0
@@ -315,7 +314,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5139e30f27d597e40b0a0f270f6378c3, type: 2}
+  - {fileID: 2100000, guid: 4f476dbf9d282a140bf265cc6e193de0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
