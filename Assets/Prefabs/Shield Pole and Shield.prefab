@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 5746282245416738580}
   - component: {fileID: 1454279404}
   - component: {fileID: 1454279403}
+  - component: {fileID: 7711232062096478473}
   m_Layer: 0
   m_Name: Shield Pole and Shield
   m_TagString: Shield
@@ -138,7 +139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5746282245416738579}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 65.5, y: 6.8, z: 4.2}
+  m_LocalPosition: {x: 65.5, y: 17, z: 4.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5202884886117356331}
@@ -183,6 +184,25 @@ MonoBehaviour:
   soundSource: {fileID: 8707307012819081362}
   destroyed: {fileID: 8300000, guid: f08be272c1bac56408a80ce457634fc7, type: 3}
   enemyDestroyed: {fileID: 8300000, guid: 70c8c4fd8df6f1c48879c4e822dfd6fe, type: 3}
+  explosionTimer: 30
+--- !u!143 &7711232062096478473
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746282245416738579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.92
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &391283159
 BoxCollider:
   m_ObjectHideFlags: 0

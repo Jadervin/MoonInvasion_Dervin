@@ -18,12 +18,14 @@ public class TurretHealth : MonoBehaviour
     public AudioClip destroyed;
     public AudioClip enemyDestroyed;
 
+    public float explosionTimer = 2;
+
 
     void Start()
     {
 
         currentHP = MaxHP;
-
+        StartCoroutine(Wait(explosionTimer));
     }
 
     /*
@@ -115,6 +117,20 @@ public class TurretHealth : MonoBehaviour
 
         }
     }
-    
-   
+
+
+    IEnumerator Wait(float duration)
+    {
+        //This is a coroutine
+        //Debug.Log("Start Wait() function. The time is: " + Time.time);
+        //Debug.Log("Float duration = " + duration);
+        yield return new WaitForSeconds(duration);   //Wait
+
+        //Debug.Log("End Wait() function and the time is: " + Time.time);
+
+        Destroy(this.gameObject);
+        Instantiate(turretExplode, transform.position, Quaternion.identity);
+        soundSource.PlayOneShot(destroyed);
+
+    }
 }
