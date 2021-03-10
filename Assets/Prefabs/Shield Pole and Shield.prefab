@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2095068088}
   m_Layer: 0
   m_Name: Shield (1)
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,9 +121,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5746282245416738580}
+  - component: {fileID: 1454279404}
+  - component: {fileID: 1454279403}
   m_Layer: 0
   m_Name: Shield Pole and Shield
-  m_TagString: Turret
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -143,9 +145,44 @@ Transform:
   - {fileID: 5746282245438674508}
   - {fileID: 5746282244878988080}
   - {fileID: 5746282245922179109}
+  - {fileID: 8707307012819081365}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1454279404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746282245416738579}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.9802475, y: 9.92071, z: 11.171122}
+  m_Center: {x: -5.9901237, y: 4.460355, z: -0.87593484}
+--- !u!114 &1454279403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5746282245416738579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07531ef9b7db22442a70059a67e1bb33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHP: 2
+  currentHP: 0
+  NoHP: 0
+  cooldownTime: 0
+  turretExplode: {fileID: 7074951875977169484, guid: 25b5c02a66774504191b3d41317c85d1, type: 3}
+  enemyExplode: {fileID: 714942875768797795, guid: 1501a87668904f248994a43b6d22a99a, type: 3}
+  soundSource: {fileID: 8707307012819081362}
+  destroyed: {fileID: 8300000, guid: f08be272c1bac56408a80ce457634fc7, type: 3}
+  enemyDestroyed: {fileID: 8300000, guid: 70c8c4fd8df6f1c48879c4e822dfd6fe, type: 3}
 --- !u!65 &391283159
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -174,7 +211,7 @@ GameObject:
   - component: {fileID: 1662812876}
   m_Layer: 0
   m_Name: Shield (2)
-  m_TagString: Untagged
+  m_TagString: Shield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -271,6 +308,73 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000005, y: 0.0000007450583, z: 10.000004}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &490742976
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5746282245416738580}
+    m_Modifications:
+    - target: {fileID: 8707307012999445587, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_Name
+      value: Sound Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -126.46943
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 35.569458
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -51.51313
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+--- !u!4 &8707307012819081365 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+  m_PrefabInstance: {fileID: 490742976}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &8707307012819081362 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+  m_PrefabInstance: {fileID: 490742976}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1296537747081376022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324,6 +428,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6791673944532985693, guid: aa79d72909b091c47a85a30dcab7f002, type: 3}
       propertyPath: m_Name
+      value: Shield
+      objectReference: {fileID: 0}
+    - target: {fileID: 6791673944532985693, guid: aa79d72909b091c47a85a30dcab7f002, type: 3}
+      propertyPath: m_TagString
       value: Shield
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -393,6 +501,10 @@ PrefabInstance:
     - target: {fileID: 8752568126777569737, guid: 5bcad9e7b37efb048a1a12236884b025, type: 3}
       propertyPath: m_Name
       value: ShieldPoleAnimated
+      objectReference: {fileID: 0}
+    - target: {fileID: 8752568126777569737, guid: 5bcad9e7b37efb048a1a12236884b025, type: 3}
+      propertyPath: m_TagString
+      value: Shield
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bcad9e7b37efb048a1a12236884b025, type: 3}

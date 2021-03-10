@@ -62,6 +62,29 @@ public class TurretHealth : MonoBehaviour
     {
         if (collision.gameObject.tag == "Alien")
         {
+            if(this.gameObject.tag=="Shield")
+            {
+                currentHP = currentHP - 1;
+
+                Destroy(collision.gameObject);
+                Instantiate(enemyExplode, transform.position, Quaternion.identity);
+                soundSource.PlayOneShot(enemyDestroyed);
+
+                if (currentHP == NoHP)
+                {
+                    Destroy(this.gameObject);
+                    Instantiate(turretExplode, transform.position, Quaternion.identity);
+                    soundSource.PlayOneShot(destroyed);
+
+
+                    Destroy(collision.gameObject);
+                    Instantiate(enemyExplode, transform.position, Quaternion.identity);
+                    soundSource.PlayOneShot(enemyDestroyed);
+
+                    Debug.Log("DESTROYED");
+                }
+
+            }
             currentHP = currentHP - 1;
 
             if (currentHP == NoHP)
@@ -82,27 +105,13 @@ public class TurretHealth : MonoBehaviour
 
         if (collision.gameObject.tag == "Tank")
         {
-            if (coolTimer > 0)
-            {
-                coolTimer -= Time.deltaTime;
-            }
-
-
-            else if (coolTimer <= 0)
-            {
-                Destroy(this.gameObject);
-                coolTimer = cooldownTime;
-            }
-            //currentHP = currentHP - 1;
-            
-
+            Destroy(collision.gameObject);
+            Destroy(this.gameObject);
+            Instantiate(turretExplode, transform.position, Quaternion.identity);
+            soundSource.PlayOneShot(destroyed);
             
         }
     }
     
-    // Start is called before the first frame update
-    
-
-    // Update is called once per frame
-    
+   
 }
