@@ -3480,6 +3480,9 @@ MonoBehaviour:
   timerIsRunning: 0
   win: You Win
   startText: {fileID: 441194326}
+  enemymove:
+  - {fileID: -24360151894042586, guid: 222e89b8550a2f94cab105bf01f87f85, type: 3}
+  - {fileID: 4538826309944259833, guid: 7668d312a9413a24786bb05ece4f9208, type: 3}
   enemyspawn:
   - {fileID: 289179853}
   - {fileID: 714129865}

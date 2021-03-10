@@ -11,6 +11,7 @@ public class TimerScript : MonoBehaviour
     public string win;
     public Text startText;
 
+    public EnemyMovement[] enemymove;
     public EnemySpawn[] enemyspawn;
     public int scriptSelected = 0;
 
@@ -34,6 +35,8 @@ public class TimerScript : MonoBehaviour
             {
                 enemyspawn[scriptSelected].minSpawnSec = enemyspawn[scriptSelected].minSpawnSec / 2;
                 enemyspawn[scriptSelected].maxSpawnSec = enemyspawn[scriptSelected].maxSpawnSec / 2;
+
+                enemymove[scriptSelected].Speed = enemymove[scriptSelected].Speed * 2;
             }
             else
             {

@@ -505,6 +505,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346275824}
   m_CullTransparentMesh: 0
+--- !u!1001 &468376390
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8707307012999445587, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_Name
+      value: Sound Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -124.04724
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 39.926674
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -49.111362
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445589, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+--- !u!82 &468376391 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+  m_PrefabInstance: {fileID: 468376390}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &577801529
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,6 +1028,8 @@ MonoBehaviour:
   startSceneName: Tower Defense
   Menu: Main Menu
   Credits: Credits
+  soundSource: {fileID: 468376391}
+  menu: {fileID: 8300000, guid: 223596bd9f9d9ca46a4130838728ded7, type: 3}
 --- !u!4 &1388942464
 Transform:
   m_ObjectHideFlags: 0
