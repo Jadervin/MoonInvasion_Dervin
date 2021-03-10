@@ -22,7 +22,7 @@ public class EnemyMovement : MonoBehaviour
 
 
 
-    public Health health;
+    //public Health health;
 
     // Start is called before the first frame update
     void Start()
@@ -78,8 +78,6 @@ public class EnemyMovement : MonoBehaviour
 
     private void OnParticleCollision(GameObject other) 
     {
-
-
         Destroy(this.gameObject);
     }
 }

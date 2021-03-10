@@ -106,10 +106,13 @@ public class TurretHealth : MonoBehaviour
         if (collision.gameObject.tag == "Tank")
         {
             Destroy(collision.gameObject);
+            Instantiate(enemyExplode, transform.position, Quaternion.identity);
+            soundSource.PlayOneShot(enemyDestroyed);
             Destroy(this.gameObject);
             Instantiate(turretExplode, transform.position, Quaternion.identity);
             soundSource.PlayOneShot(destroyed);
             
+
         }
     }
     

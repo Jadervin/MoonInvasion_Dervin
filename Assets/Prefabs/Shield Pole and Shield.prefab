@@ -315,6 +315,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5746282245416738580}
     m_Modifications:
+    - target: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: m_Volume
+      value: 0.631
+      objectReference: {fileID: 0}
+    - target: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 0.474
+      objectReference: {fileID: 0}
     - target: {fileID: 8707307012999445587, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
       propertyPath: m_Name
       value: Sound Manager

@@ -31,7 +31,7 @@ public class LaserCollision : MonoBehaviour
             Destroy(collision.gameObject);
             //Instantiate(gitsEffect, transform.position, Quaternion.identity);
 
-            Destroy(this.gameObject);
+            //Destroy(this.gameObject);
         }
 
     }

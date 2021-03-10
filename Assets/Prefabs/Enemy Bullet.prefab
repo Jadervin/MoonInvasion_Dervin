@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2888679897504021700}
   m_Layer: 0
   m_Name: Enemy Bullet
-  m_TagString: Untagged
+  m_TagString: Enemy Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,9 +135,7 @@ MonoBehaviour:
   turretExplode: {fileID: 7074951875977169484, guid: 25b5c02a66774504191b3d41317c85d1, type: 3}
   soundSource: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
   kill: {fileID: 8300000, guid: 70c8c4fd8df6f1c48879c4e822dfd6fe, type: 3}
-  tankMaxHP: 4
-  tankcurrentHP: 0
-  tankNoHP: 0
+  tankHP: {fileID: 0}
 --- !u!65 &3231406559539116575
 BoxCollider:
   m_ObjectHideFlags: 0

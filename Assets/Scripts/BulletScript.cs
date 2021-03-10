@@ -59,7 +59,7 @@ public class BulletScript : MonoBehaviour
         
         if (other.gameObject.tag == ("Tank"))
         {
-
+            Destroy(other.gameObject);
             Destroy(this.gameObject);
 
         }
@@ -91,10 +91,13 @@ public class BulletScript : MonoBehaviour
           */
         if (other.gameObject.tag == ("Turret"))
         {
-            Destroy(other.gameObject);
-        Instantiate(turretExplode, transform.position, Quaternion.identity);
-        soundSource.PlayOneShot(kill);
-            Destroy(this.gameObject);
+            if (this.gameObject.tag == "Enemy Bullet")
+            {
+                Destroy(other.gameObject);
+                Instantiate(turretExplode, transform.position, Quaternion.identity);
+                soundSource.PlayOneShot(kill);
+                Destroy(this.gameObject);
+            }
         }
 
     }

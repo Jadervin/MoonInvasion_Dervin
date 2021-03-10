@@ -11,6 +11,12 @@ public class DragDropScript : MonoBehaviour, IPointerDownHandler, IBeginDragHand
 
     private RectTransform rectTransform;
 
+
+
+
+
+
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
