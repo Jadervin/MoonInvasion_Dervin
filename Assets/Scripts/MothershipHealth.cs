@@ -42,7 +42,7 @@ public class MothershipHealth : MonoBehaviour
             Destroy(other.gameObject);
             Instantiate(enemyExplode, transform.position, Quaternion.identity);
 
-            if (currentHP == NoHP)
+            if (currentHP <= NoHP)
             {
 
                 gameObject.GetComponent <Renderer> ().enabled = false;
@@ -61,7 +61,7 @@ public class MothershipHealth : MonoBehaviour
             Destroy(other.gameObject);
             Instantiate(enemyExplode, transform.position, Quaternion.identity);
 
-            if (currentHP == NoHP)
+            if (currentHP <= NoHP)
             {
                 //Destroy(this.gameObject);
                 
