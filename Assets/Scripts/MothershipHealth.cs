@@ -50,15 +50,6 @@ public class MothershipHealth : MonoBehaviour
 
                 StartCoroutine(Wait(explosionTimer));
 
-                //explosionTimer -= Time.deltaTime;
-                
-
-                /*
-                if (explosionTimer < 0)
-                {
-                    SceneManager.LoadScene(gameover);
-                }
-                */
                 Debug.Log("DESTROYED");
             }
         }

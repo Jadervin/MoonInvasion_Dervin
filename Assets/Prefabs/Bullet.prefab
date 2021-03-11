@@ -135,7 +135,6 @@ MonoBehaviour:
   turretExplode: {fileID: 7074951875977169484, guid: 25b5c02a66774504191b3d41317c85d1, type: 3}
   soundSource: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
   kill: {fileID: 8300000, guid: f08be272c1bac56408a80ce457634fc7, type: 3}
-  tankHP: {fileID: 6540857088678049653, guid: 7668d312a9413a24786bb05ece4f9208, type: 3}
 --- !u!65 &2896874798014577323
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -159,7 +158,7 @@ TrailRenderer:
   m_GameObject: {fileID: 4419616341875294127}
   m_Enabled: 1
   m_CastShadows: 1
-  m_ReceiveShadows: 1
+  m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 0
@@ -199,7 +198,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.34644914
+        value: 0.14172196
         inSlope: 1.0610926
         outSlope: 1.0610926
         tangentMode: 0
@@ -237,7 +236,7 @@ TrailRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 58211
+      atime1: 18119
       atime2: 0
       atime3: 0
       atime4: 0
@@ -252,7 +251,7 @@ TrailRenderer:
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
-    generateLightingData: 0
+    generateLightingData: 1
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
@@ -315,7 +314,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5139e30f27d597e40b0a0f270f6378c3, type: 2}
+  - {fileID: 2100000, guid: 2e5d893e15d72b748b046114113d6613, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
