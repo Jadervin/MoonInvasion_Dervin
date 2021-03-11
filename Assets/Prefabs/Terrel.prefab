@@ -2005,7 +2005,7 @@ MonoBehaviour:
   soundSource: {fileID: 13911511}
   destroyed: {fileID: 8300000, guid: 70c8c4fd8df6f1c48879c4e822dfd6fe, type: 3}
   enemyDestroyed: {fileID: 8300000, guid: f08be272c1bac56408a80ce457634fc7, type: 3}
-  explosionTimer: 5
+  explosionTimer: 10
 --- !u!1 &8636268790763766166
 GameObject:
   m_ObjectHideFlags: 0

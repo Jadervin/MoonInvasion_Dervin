@@ -294,7 +294,7 @@ MonoBehaviour:
   soundSource: {fileID: 8707307012999445586, guid: a1ac4abab168e924fa133200426a7d5d, type: 3}
   destroyed: {fileID: 8300000, guid: 70c8c4fd8df6f1c48879c4e822dfd6fe, type: 3}
   enemyDestroyed: {fileID: 8300000, guid: f08be272c1bac56408a80ce457634fc7, type: 3}
-  explosionTimer: 10
+  explosionTimer: 15
 --- !u!1001 &3737817848016118855
 PrefabInstance:
   m_ObjectHideFlags: 0
