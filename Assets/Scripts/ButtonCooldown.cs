@@ -8,13 +8,20 @@ public class ButtonCooldown : MonoBehaviour
     [SerializeField]
     Button myButton;
     [SerializeField]
+    Image image;
+    [SerializeField]
     float cooldownDuration = 5;
+
+    private void Start()
+    {
+        image.fillAmount = 0;
+    }
 
     void Awake()
     {
         // Get a reference to your button
         myButton = GetComponent<Button>();
-
+        image.fillAmount = 1;
         if (myButton != null)
         {
             
@@ -23,10 +30,7 @@ public class ButtonCooldown : MonoBehaviour
     }
 
 
-    private void Start()
-    {
-        
-    }
+   
     // This method is called whenever myButton is pressed
     void OnButtonClick()
     {
@@ -38,6 +42,7 @@ public class ButtonCooldown : MonoBehaviour
     {
         // Deactivate myButton
         myButton.interactable = false;
+        image.fillAmount -= 1 / cooldownDuration * Time.deltaTime;
         // Wait for cooldown duration
         yield return new WaitForSeconds(cooldownDuration);
         // Reactivate myButton
