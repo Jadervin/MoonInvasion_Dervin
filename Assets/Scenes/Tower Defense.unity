@@ -4811,7 +4811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 1294109308}
-  cooldownDuration: 30
+  cooldownDuration: 20
 --- !u!1 &1322439451
 GameObject:
   m_ObjectHideFlags: 0
@@ -6250,7 +6250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myButton: {fileID: 1655821941}
-  cooldownDuration: 20
+  cooldownDuration: 30
 --- !u!1 &1657984568 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 765553004391516473, guid: c99550d2897aa53408f5ec749b671e77, type: 3}
