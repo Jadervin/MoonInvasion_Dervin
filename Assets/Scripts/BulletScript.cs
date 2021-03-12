@@ -102,6 +102,14 @@ public class BulletScript : MonoBehaviour
             }
         }
 
+        if (other.gameObject.tag == ("Shield"))
+        {
+            if (this.gameObject.tag == "Enemy Bullet")
+            {
+               
+                Destroy(this.gameObject);
+            }
+        }
     }
     
    
