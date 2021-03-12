@@ -10,7 +10,7 @@ public class TurretHealth : MonoBehaviour
     public int currentHP;
     public int NoHP;
     public float cooldownTime;
-    float coolTimer = 0;
+    //float coolTimer = 0;
     public ParticleSystem turretExplode;
     public ParticleSystem enemyExplode;
 

@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MothershipHealth : MonoBehaviour
 {
-    public int MaxHP;
+    public float MaxHP;
     [HideInInspector]
-    public int currentHP;
-    public int NoHP;
+    public float currentHP;
+    public float NoHP;
 
     public string gameover;
 
@@ -69,6 +69,25 @@ public class MothershipHealth : MonoBehaviour
                 Instantiate(mothershipExplosion, transform.position, Quaternion.identity);
                 mothershipExplosion.Play();
                 StartCoroutine(Wait(explosionTimer));
+            }
+        }
+
+        if (other.gameObject.tag == "Enemy Bullet")
+        {
+
+            currentHP -= 0.25f;
+            
+            Instantiate(enemyExplode, transform.position, Quaternion.identity);
+
+            if (currentHP <= NoHP)
+            {
+
+                gameObject.GetComponent<Renderer>().enabled = false;
+                Instantiate(mothershipExplosion, transform.position, Quaternion.identity);
+
+                StartCoroutine(Wait(explosionTimer));
+
+                Debug.Log("DESTROYED");
             }
         }
     }

@@ -13,7 +13,7 @@ public class HealthUI : MonoBehaviour
 
     private void Start()
     {
-        healthbar.maxValue = healthToDisplay.MaxHP;
+        healthbar.maxValue = (float)healthToDisplay.MaxHP;
     }
 
     // Update is called once per frame
@@ -21,6 +21,6 @@ public class HealthUI : MonoBehaviour
     {
         //healthDisplay.text = healthToDisplay.currentHP.ToString();
 
-        healthbar.value = healthToDisplay.currentHP;
+        healthbar.value = (float)healthToDisplay.currentHP;
     }
 }

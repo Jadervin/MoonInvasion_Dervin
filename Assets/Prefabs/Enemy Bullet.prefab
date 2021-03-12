@@ -129,7 +129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  despawnTime: 3
+  despawnTime: 5
   damage: 2
   explosionEffect: {fileID: 714942875768797795, guid: 1501a87668904f248994a43b6d22a99a, type: 3}
   turretExplode: {fileID: 7074951875977169484, guid: 25b5c02a66774504191b3d41317c85d1, type: 3}
