@@ -66,31 +66,7 @@ public class BulletScript : MonoBehaviour
 
         }
 
-        /*
-            tankHP.tankcurrentHP -= 1;
-            Destroy(this.gameObject);
-
-
-            if (tankHP.tankcurrentHP == tankHP.tankNoHP)
-            {
-                Destroy(other.gameObject);
-                Instantiate(turretExplode, transform.position, Quaternion.identity);
-                soundSource.PlayOneShot(kill);
-
-
-                Destroy(this.gameObject);
-           
-
-                Debug.Log("DESTROYED");
-            }
-            
-            Destroy(other.gameObject);
-            Instantiate(explosionEffect, transform.position, Quaternion.identity);
-            soundSource.PlayOneShot(kill);
-            Destroy(this.gameObject);
-            
-        }
-          */
+        
         if (other.gameObject.tag == ("Turret"))
         {
             if (this.gameObject.tag == "Enemy Bullet")
